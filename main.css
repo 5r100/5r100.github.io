@@ -1,7 +1,7 @@
 .main-top {
 	width:100%;
 	margin:0 auto;
-	background: src(TopBG.jpg);
+	background: irl("TopBG.jpg");
 	background-size: cover;
 	text-align: center;
 }
