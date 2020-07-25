@@ -1,12 +1,107 @@
-.main-top {
-	width:100%;
-	margin:0 auto;
-	background: irl("TopBG.jpg");
-	background-size: cover;
-	text-align: center;
+.frame{
+  width: 200px;
+  height: 0px;
+  margin: 0 auto;
+  margin-top: 2px;
+  position: relative;
+  cursor: pointer;
 }
 
-.main-top h1 {
-        Font-size:30;
-        Font-family:merienda one;
+.frame:hover .hex-inner-top{
+  height: 50px;
+  top: 90px !important;
+  border-radius: 4px;
 }
+
+.frame:hover .label{
+  transform: scale(.90);
+  -webkit-transform: scale(.90);
+}
+
+.frame:hover .label-center{
+  transform: scale(.90);
+  -webkit-transform: scale(.90);
+}
+
+.hex-outer-top{
+  background: black;
+  width: 106px;
+  height: 61px;
+  position: relative;
+  left: 51px;
+  top: 89px !important;
+}
+
+.hex-inner-top{
+  background: #b3ff99;
+  width: 100px;
+  height: 58px;
+  position: relative;
+  left: 55px;
+  top: 90px !important;
+  border-radius: 0;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+}
+
+.hex-outer-center{
+  background: black;
+  width: 106px;
+  height: 61px;
+  position: relative;
+  left: 96px;
+  top: 190px !important;
+}
+
+.hex-inner-center{
+  background: #b3ff99;
+  width: 100px;
+  height: 58px;
+  position: relative;
+  left: 100px;
+  top: 191px !important;
+  border-radius: 0;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+}
+
+.h1 {
+  position: absolute;
+  top: 80px;
+}
+
+.h2 {
+  position: absolute;
+  top: 80px;
+  transform: rotate(60deg);
+  -webkit-transform: rotate(60deg);
+}
+
+.h3 {
+  position: absolute;
+  top: 80px;
+  transform: rotate(-60deg);
+  -webkit-transform: rotate(-60deg);
+}
+
+.label {
+  position: absolute;
+  color: red;
+  font-weight: bold;
+  font-size: 80px;
+  left: 75px;
+  top: 45px;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+}
+
+.label-center{
+  position: absolute;
+  color: red;
+  font-weight: bold;
+  font-size: 80px;
+  left: 120px;
+  top: 160px;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+ }
