@@ -60,10 +60,10 @@
 				<h1>Hello guys</H1>
 				<p>Better options is always a high quality website. Your customers will definitely judge you based on the look of your sites. So, make your site aesthetic and a bit stunning too. </p> 
 				<div id="reveal-elements">
-					<div class="digit"><p class="words">Wanna see surprise</p></div>
-	                <div class="digit"><p class="words">really...</p></div>
-	                <div class="digit"><p class="words">scroll down</p></div>
-	                <div class="digit"><p class="words">go on</p></div>
+					<div class="digit"><p>Wanna see surprise</p></div>
+	                <div class="digit"><p>really...</p></div>
+	                <div class="digit"><p>scroll down</p></div>
+	                <div class="digit"><p>go on</p></div>
                 </div>
                 <div id="reveal1">
 	                 <p style="font-weight:bold">Surprise</p>
@@ -92,10 +92,10 @@
 <script>
         var controller = new ScrollMagic.Controller();
 		var revealElements = document.getElementsByClassName("digit");
-		for (var i=0; i<revealElements.length; i++) { 
+		for (var i=0; i<revealElements.length; i++) {
 			new ScrollMagic.Scene({
 								triggerElement: revealElements[i], 
-								offset: 50,									
+								offset: 50,												
 								triggerHook: 0.9,
 							})
 							.setClassToggle(revealElements[i], "visible") 
@@ -105,7 +105,7 @@
 							triggerElement: "#trigger1",
 							triggerHook: 0.9, 
 							duration: "80%",
-							offset: 50 
+							offset: 50
 						})
 						.setClassToggle("#reveal1", "visible")
 						.addTo(controller);
